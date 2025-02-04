@@ -12,6 +12,8 @@ ul, ol {
     list-style: none;
 }
 
+
+
 /* Убираем стандартные подчеркивания ссылок */
 a {
     text-decoration: none;
@@ -49,6 +51,19 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
 
 /* Убираем особенности оформления некоторых браузеров */
 body {
