@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Обнуление отступов и границ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Убираем стандартные стили списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем стандартные подчеркивания ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Базовые стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Обнуление стандартных стилей кнопок и инпутов */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Убираем стандартное поведение кнопок */
+button {
+    cursor: pointer;
+}
+
+/* Убираем стандартные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Улучшение рендеринга шрифтов */
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем особенности оформления некоторых браузеров */
+body {
+    background: var(--color-slate-300);
+    font-family: Outfit sans-serif;
+    font-feature-settings: 'liga' off, 'clig' off;
+}
+
+.wrapper-full-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.qr-code {
+    width: 320px;
+    background: var(--color-white, #FFF);
+    border-radius: var(--border-radius-cards);
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+}
+
+.qr-code__wrapper {
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+}
+
+.qr-code__image {
+    border-radius: var(--border-radius-images);
+}
+
+.qr-code--text-centered {
+    text-align: center;
+}
+
+.qr-code--card-text-padding {
+    padding: 0 16px;
+}
+
+.qr-code__title {
+    margin-top: var(--spacing-300);
+    color: var(--color-slate-900, #1F314F);
+    text-align: center;
+    font-size: var(--font-size-text-preset-1, 22px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.qr-code__description {
+    margin-top: var(--spacing-200);
+    color: var(--color-slate-500, #68778D);
+    font-size: var(--font-size-text-preset-2, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.2px;
+}
+
+
+/* MEDIAS */
+
+@media (max-width: 320px) {
+    .qr-code {
+        max-width: 280px;
+    }
+}
+

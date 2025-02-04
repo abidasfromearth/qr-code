@@ -1,0 +1,15 @@
+:root {
+    --color-slate-900: #1F314F;
+    --color-slate-500: #68778D;
+    --color-slate-300: #D5E1EF;
+    --color-blue-600: #2C7DFA;
+    --color-blue-500: #3685FF;
+    --color-white: #FFFFFF;
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --border-radius-images: 10px;
+    --border-radius-cards: 20px;
+    --font-size-text-preset-1: 22px;
+    --font-size-text-preset-2: 15px;
+}
